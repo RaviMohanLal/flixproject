@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+   
+{% block content %}
+
+<h1>Video storing with Ravi streaming from NGINX</h1>
+<h5>src="http://34.67.246.221/pics/{{ data.Title }}"</h5>
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h1>You are watching:</h1>
+        <h2>{{ data.Title }}</h2>
+        <video controls autoplay>
+            <source src="http://34.133.177.89/pics/{{data.Title}}.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+{% endblock %}
